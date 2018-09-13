@@ -7,3 +7,9 @@
 生产者发送的内容，消费者就能读取到，单个topic，单个组，单个消费者
 
 就为了能跑通吧
+
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic One
+此命令可以开启一个生产的窗口，
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic One --from-beginning
+此命令可以开启一个从头开始消费内容的 消费者的窗口
